@@ -1,9 +1,189 @@
-import React from 'react'
+"use client";
 
-export const Resume = () => {
+import { 
+    SiHtml5,
+    SiCss3,
+    SiJavascript,
+    SiTailwindcss,
+    SiReact,
+    SiNextdotjs,
+    SiPhp,
+    SiLaravel,
+    SiMysql,
+    SiDart,
+    SiFlutter,
+} from "react-icons/si";
+
+// About data
+const about = {
+    title: "About Me",
+    description: "i am a front-end developer based in Indonesia. I have a passion for web development and love to create new things.",
+    info: [
+        {
+            fieldName: "Name",
+            fieldValue: "Mahardhika Bredy",
+        },
+        {
+            fieldName: "Phone",
+            fieldValue: "+62 852 2624 9738",
+        },
+        {
+            fieldName: "Email",
+            fieldValue: "bredymahardhika@gmail.com",
+        },
+        {
+            fieldName: "Address",
+            fieldValue: "Jl. Raya Kuncir No. 50, Nganjuk, Jawa Timur",
+        }
+    ]
+}
+
+// Education data
+const education = {
+    icon: "/assets/resume/cap.svg",
+    title: "Education",
+    description: "i graduated from Universitas Negeri Malang majoring in Computer Science.",
+    items: [
+        {
+            institution: "Politeknik Negeri Malang",
+            degree: "D-IV Teknik Informatika",
+            duration: "2021 - present",
+        },
+        {
+            institution: "SMAN 3 Nganjuk",
+            degree: "Mipa",
+            duration: "2018 - 2021",
+        },
+    ]
+}
+
+// Skills data
+const skills = {
+    title: "My Skills",
+    description: "i have experience in web development using several technologies.",
+    skillList: [
+        {
+            icon: <SiHtml5 />,
+            name: "HTML",
+        },
+        {
+            icon: <SiCss3 />,
+            name: "CSS",
+        },
+        {
+            icon: <SiJavascript />,
+            name: "JS",
+        },
+        {
+            icon: <SiTailwindcss />,
+            name: "Tailwind",
+        },
+        {
+            icon: <SiReact />,
+            name: "React JS",
+        },
+        {
+            icon: <SiNextdotjs />,
+            name: "Next JS",
+        },
+        {
+            icon: <SiDart />,
+            name: "Dart",
+        },
+        {
+            icon: <SiFlutter />,
+            name: "Flutter",
+        },
+        {
+            icon: <SiPhp />,
+            name: "PHP",
+        },
+        {
+            icon: <SiLaravel />,
+            name: "Laravel",
+        },
+        {
+            icon: <SiMysql />,
+            name: "My Sql",
+        },
+    ]
+}
+
+import { Tabs, TabsContent, TabsTrigger, TabsList } from "@/components/ui/tabs";
+
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@radix-ui/react-tooltip"
+
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { motion } from "framer-motion";
+
+const Resume = () => {
     return (
-        <div>resume page wak</div>
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{
+                opacity: 1,
+                transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }
+            }}
+            className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+        >
+            <div className="container mx-auto">
+                <Tabs
+                    defaultValue="education"
+                    className="flex flex-col xl:flex-row gap-[60px]"
+                >
+                    <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+                        <TabsTrigger value="education">Education</TabsTrigger>
+                        <TabsTrigger value="skill">Skill</TabsTrigger>
+                        <TabsTrigger value="about">About Me</TabsTrigger>
+                    </TabsList>
+                    {/* content */}
+                    <div className="min-h-[78vh] w-full">
+                        {/* Education */}
+                        <TabsContent value="education" className="w-full">
+                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                                <h3 className="text-4xl font-bold">{education.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+                                <ScrollArea className="h-[400px]">
+                                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                        {education.items.map((item, index) => {
+                                            return (
+                                                <li
+                                                    key={index}
+                                                    className="bg-[#23232c] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                                                >
+                                                    <span className="text-accent">{item.duration}</span>
+                                                    <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
+                                                    <div>
+                                                        {/* dot */}
+                                                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                                        <p className="text-white/60">{item.institution}</p>
+                                                    </div>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </ScrollArea>
+                            </div>
+                        </TabsContent>
+                        {/* Skill */}
+                        <TabsContent value="skill" className="w-full">
+                            Edu
+                        </TabsContent>
+                        {/* About */}
+                        <TabsContent value="about" className="w-full">
+                            Edu
+                        </TabsContent>
+                    </div>
+                </Tabs>
+            </div>
+        </motion.div>
     )
 }
+
 
 export default Resume;
