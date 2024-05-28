@@ -25,6 +25,7 @@ const projects = [
         num: "01",
         category: "Front-end",
         title: "Project 01",
+        type: "Personal Project",
         descriptiom: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non.",
         stack: [{ name: "React" }, { name: "Next.js" }, { name: "Tailwind CSS" }],
         image: "/assets/work/spk.png",
@@ -33,7 +34,8 @@ const projects = [
     {
         num: "02",
         category: "FBack-end",
-        title: "Project 01",
+        title: "Project 02",
+        type: "Team Project",
         descriptiom: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non.",
         stack: [{ name: "React" }, { name: "Next.js" }, { name: "Tailwind CSS" }],
         image: "/assets/work/inventory.png",
@@ -42,7 +44,8 @@ const projects = [
     {
         num: "03",
         category: "Mobile",
-        title: "Project 01",
+        title: "Project 03",
+        type: "Personal Project",
         descriptiom: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non.",
         stack: [{ name: "React" }, { name: "Next.js" }, { name: "Tailwind CSS" }],
         image: "/assets/work/spk.png",
