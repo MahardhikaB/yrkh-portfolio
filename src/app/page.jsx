@@ -12,10 +12,10 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Front-end Developer</span>
             <h1 className="h1">
-              Hello I'm <br /> <span className="text-accent">Mahardhika Bredy</span>
+              Hello I'm <br /> <span className="text-accent">Mahardhika Bredy D G</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I'm a front-end developer based in Indonesia. I have a passion for web development and love to create new things.
+              I am a student of Politeknik Negeri Malang who focuses on Front-end development especially on Flutter and ReactJs.
             </p>
             {/* cv button & social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
@@ -24,7 +24,7 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <span>Download CV</span>
+                <a href="/assets/cv.pdf" download>Download CV</a>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
