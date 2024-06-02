@@ -30,7 +30,7 @@ export const Contact = () => {
             animate={{opacity: 1, transition: {delay: 2.4, duration: 0.4, ease: "easeIn"}}}
             className="py-6"
         >
-            <div className="container mx-auto mt-32 xl:my-0">
+            <div className="container mx-auto mt-24 xl:my-0">
                 <div className="flex flex-col xl:flex-row gap-[30px] xl:gap-0">
                     {/* Image */}
                     <div className="xl:h-[54%] xl:ml-28">
