@@ -30,7 +30,7 @@ export const Contact = () => {
             animate={{opacity: 1, transition: {delay: 2.4, duration: 0.4, ease: "easeIn"}}}
             className="py-6"
         >
-            <div className="container mx-auto xl:my-0">
+            <div className="container mx-auto mt-32 xl:my-0">
                 <div className="flex flex-col xl:flex-row gap-[30px] xl:gap-0">
                     {/* Image */}
                     <div className="xl:h-[54%] xl:ml-28">
@@ -55,7 +55,7 @@ export const Contact = () => {
                                         </div>
                                         <div className="flex-1">
                                             <p className="text-white/60">{item.title}</p>
-                                            <h3 className="text-sm">{item.text}</h3>
+                                            <h3 className="text-base xl:text-xl">{item.text}</h3>
                                         </div>
                                     </li>
                                 )
