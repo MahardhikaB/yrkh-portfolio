@@ -41,8 +41,8 @@ const about = {
 // Education data
 const education = {
     icon: "/assets/resume/cap.svg",
-    title: "Education",
-    description: "i graduated from Universitas Negeri Malang majoring in Computer Science.",
+    title: "My Education",
+    description: "??????????????????????????????????",
     items: [
         {
             institution: "Politeknik Negeri Malang",
@@ -50,9 +50,14 @@ const education = {
             duration: "2021 - present",
         },
         {
-            institution: "SMAN 3 Nganjuk",
-            degree: "Mipa",
-            duration: "2018 - 2021",
+            institution: "Dicoding",
+            degree: "Memulai Pemrograman Dengan Dart",
+            duration: "Oct 2023",
+        },
+        {
+            institution: "Dicoding",
+            degree: "Belajar Dasar Pemrograman Web",
+            duration: "July 2023",
         },
     ]
 }
@@ -60,7 +65,7 @@ const education = {
 // Skills data
 const skills = {
     title: "My Skills",
-    description: "i have experience in web development using several technologies.",
+    description: "Here are the technologies that I used for my project and that I have learned during my studies.",
     skillList: [
         {
             icon: <SiHtml5 />,
