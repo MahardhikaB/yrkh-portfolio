@@ -31,7 +31,7 @@ const Photo = () => {
                     className="w-[280px] h-[280px] xl:w-[480px] xl:h-[480px] absolute top-3 left-3"
                 >
                     <Image
-                        src="/assets/photo3.png"
+                        src="/assets/photo.png"
                         priority
                         quality={100}
                         fill
