@@ -30,11 +30,11 @@ export const Contact = () => {
             animate={{opacity: 1, transition: {delay: 2.4, duration: 0.4, ease: "easeIn"}}}
             className="py-6"
         >
-            <div className="container mx-auto my-32 xl:my-0">
+            <div className="container mx-auto xl:my-0">
                 <div className="flex flex-col xl:flex-row gap-[30px] xl:gap-0">
                     {/* Image */}
                     <div className="xl:h-[54%] xl:ml-28">
-                        <div className="hidden gap-6 p-10 rounded-xl xl:flex">
+                        <div className="hidden p-10 rounded-xl xl:flex">
                             <Image
                                 src="/assets/dazbee.jpg"
                                 width={400}
