@@ -24,7 +24,7 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <a href="/assets/cv.pdf" download>Download CV</a>
+                <a href="/assets/cv.pdf" download="CV_MahardhikaBredy_Polinema.pdf">Download CV</a>
                 <FiDownload className="text-xl" />
               </Button>
               <div className="mb-8 xl:mb-0">
