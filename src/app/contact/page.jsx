@@ -36,7 +36,7 @@ export const Contact = () => {
                     <div className="xl:h-[54%] xl:ml-28">
                         <div className="hidden p-10 rounded-xl xl:flex">
                             <Image
-                                src="/assets/dazbee.jpg"
+                                src="/assets/code.png"
                                 width={400}
                                 height={400}
                                 className="rounded-xl"
