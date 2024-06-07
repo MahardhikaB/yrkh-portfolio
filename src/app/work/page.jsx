@@ -44,7 +44,7 @@ const projects = [
         category: "Smart Door Lock Website",
         title: "Project 03",
         description: "This project is a web for admin to manage users from SDL IoT, this project is a 6th semester project with an estimated completion date of June 2024.",
-        stack: [{ name: "Laravel" }, { name: "React" }, { name: "Next.js" }, { name: "Tailwind" }],
+        stack: [{ name: "Laravel" }, { name: "Next.js" }, { name: "Tailwind" }],
         image: "/assets/work/sdl.png",
         github: "https://github.com/MahardhikaB/project_sdl.git"
     },
