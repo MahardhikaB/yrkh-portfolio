@@ -1,10 +1,10 @@
 # Visit my site : https://www.mahardhikabredy.my.id/
 
 # Preview
-## **Home**
+## **Home Page**
 ![alt text](public/images/Home.png)
 
-## **Resume**
+## **Resume Page**
 ### **Education**
 ![alt text](public/images/Edu.png)
 ### **Skills**
@@ -12,8 +12,8 @@
 ### **About Me**
 ![alt text](public/images/About.png)
 
-## **Work**
+## **Work Page**
 ![alt text](public/images/Work.png)
 
-## **Contact**
+## **Contact Page**
 ![alt text](public/images/Contact.png)
