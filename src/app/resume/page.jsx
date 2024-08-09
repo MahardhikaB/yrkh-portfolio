@@ -33,7 +33,7 @@ const about = {
         },
         {
             fieldName: "Address",
-            fieldValue: "Jl. Raya Kuncir No. 50, Nganjuk, Jawa Timur",
+            fieldValue: "Nganjuk, Jawa Timur",
         }
     ]
 }
