@@ -15,7 +15,7 @@ const Home = () => {
               Hello I'm <br /> <span className="text-accent">Mahardhika Bredy D G</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I am student of Politeknik Negeri Malang who focuses on Full Stack, the programming languages ​​I usually use are Laravel and React JS.
+              I am student of Politeknik Negeri Malang who focuses on Front-End Web Development, the programming languages ​​I usually use are React JS.
             </p>
             {/* cv button & social */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
